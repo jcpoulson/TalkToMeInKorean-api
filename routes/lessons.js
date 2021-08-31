@@ -6,6 +6,11 @@ const uri = 'mongodb://localhost:20170';
 
 const client = new MongoClient(uri);
 
+/*
+
+    API ENDPOINTS
+    
+*/
 
 /* GET all data route */
 router.get('/', async function(req, res, next) {
@@ -29,7 +34,11 @@ router.get('/:level/:lesson', async function(req, res, next) {
 
 
 
-// Database Functions
+/* 
+
+    DATABASE FUNCTIONS
+
+*/
 
 
 // Function to retrive all lesson and level data
