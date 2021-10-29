@@ -4,10 +4,13 @@ def get_lesson(level, lesson):
     db = client.ttmik
     levels = db.levels
     selected_level = levels.find_one({"level": level})
+    
+    # Another thing to remember here is you gotta do /lessons/<int:level>/<string:lesson>
 
     try:
         return selected_level['lessons'][f'lesson{lesson}']
     except Exception:
+        print("Well something is going on LOL")
         return "Unable to connect to the server."
 
 

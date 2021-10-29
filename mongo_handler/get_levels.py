@@ -2,7 +2,7 @@ from . import client
 
 def get_levels():
     db = client.ttmik
-    levels = db.levels.find({})
+    levels = db.levels.find({}).sort("level", 1) # MongoDB sorts things pretty weird by default, this puts the levels in ascending orders
 
     levels_list = list(levels)
     levels_dict = {}

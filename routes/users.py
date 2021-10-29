@@ -1,5 +1,5 @@
 import ast
-from flask import request
+from flask import request, jsonify
 from . import api
 from mongo_handler.get_user import get_user
 from mongo_handler.create_user import create_user
@@ -11,7 +11,7 @@ def users():
     user_email = user_credentials['email']
     user_password = user_credentials['password']
     user = get_user(user_email, user_password)
-    return user
+    return jsonify(user)
 
 
 @api.route('/users', methods=["POST"])
