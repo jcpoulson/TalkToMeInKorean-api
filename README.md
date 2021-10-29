@@ -9,3 +9,6 @@ Right now the plan for this backend is for it to be very minimal, it may grow as
 So there was a huge update to this project, since my last roll out. I haven't had a ton of time to work on this project
 but after getting AWS Solutions Architect certified, my job decided to move me around which gave me some time to work on this project.
 The main change is that I switched the API to use Python/Flask instead Node/Express. I personally love Python but haven't had much time/oppurtunities to use it as mostly everything I do is in JS, also the Python driver for mongo is just a lot more user friendly.
+
+
+The live deployment for the API is [TTMIK API](http://ttmikapi-env.eba-7aq8svxn.us-east-1.elasticbeanstalk.com/)
